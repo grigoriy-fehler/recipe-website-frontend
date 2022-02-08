@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"></meta>
+		<title>Recipe Website</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<header>
+			<img src="/assets/menu.svg" alt="sidenav menu button" id="sidenav-menu">
+			<input type="search" name="search" id="search" autofocus>
+			<div id="user">
+				<a href="/user-details" data-link="/user-details" id="current-user">username</a>
+				<a href="/user-login" data-link="/user-login" id="login">Login</a>
+			</div>
+		</header>
+		<main>
+			<div class="error">Warning: This website is currently in development and insecure. Do not enter any personal information!</div>
+			<nav id="nav">
+				<a href="/recipe-list" data-link="/recipe-list">Home</a>
+				<a href="/about" data-link="/about">About</a>
+				<a href="/recipe-add" data-link="/recipe-add" id="nav-recipe-add">Add Recipe</a>
+				<a href="/user-login" data-link="/user-login" id="nav-user-login">Login</a>
+				<a href="/user-register" data-link="/user-register" id="nav-user-register">Register</a>
+				<img src="/assets/close.svg" alt="sidenav close button" id="sidenav-close">
+			</nav>
+			<div id="app"></div>
+		</main>
+		<footer>
+			<a href="/contact" data-link="/contact">Contact</a>
+			<a href="/privacy" data-link="/privacy">Privacy Policy</a>
+		</footer>
+		<script type="module" src="src/app.js"></script>
+	</body>
+</html>
